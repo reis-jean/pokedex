@@ -32,10 +32,12 @@
 </head>
 <body>
     {% for nome, url in pokemons %}
-        <div class="pokemon">
-            <img src= {{url}} />
-            <span>{{ nome }}</span>
-        </div>
+        <a href='/poke/{{loop.index0}}'>
+            <div class="pokemon">
+                <img src= {{url}} />
+                <span>{{ nome }}</span>
+            </div>
+        </a>
     {% endfor%}
     
 </body>
