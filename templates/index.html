@@ -28,9 +28,18 @@
             width: 100%;
 
         }
+        .app-btn{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            
+        }
     </style>
 </head>
 <body>
+    <a class="app-btn" href="/add">
+        <button>Adicionar Pokemon</button>
+    </a>
     {% for nome, url in pokemons %}
         <a href='/poke/{{loop.index0}}'>
             <div class="pokemon">
